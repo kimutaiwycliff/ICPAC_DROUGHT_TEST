@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.leaflet-container {
+  height: 100vh;
+  width: 100vw;
+}
+.date-select {
+  margin-bottom: 16px;
+  z-index: 20;
+}
+
