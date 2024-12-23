@@ -3,4 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "3000:80"
+      - "80:80"  # Map the container port 80 to host port 80
+    # Optional: if you want live updates during development
+    volumes:
+      - ./build:/usr/share/nginx/html  # Optional: For live updates in dev environment
